@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Añadiendo personas</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <main class="w-screen h-screen flex justify-center items-center bg-slate-700">
+        <section class="flex text-white font-bold" >
+            <section class="bg-slate-600 flex flex-col gap-[1rem] p-[1rem]">
+                <div class="flex flex-col gap-[0.3rem]">
+                    <label>Nombre</label>
+                    <input class="text-black" id="nombre" type="text" placeholder="Nombre de Usuario">
+                </div>
+                <div class="flex flex-col gap-[0.3rem]">
+                    <label>Apellido</label>
+                    <input class="text-black" id="apellido" type="text" placeholder="Apellido">
+                </div>
+                <div class="flex flex-col gap-[0.3rem]">
+                    <label>Fecha de Nacimiento</label>
+                    <input class="text-black" id="fechaNacimiento" type="date" placeholder="00-00-00">
+                </div>
+                <div class="flex flex-col gap-[0.3rem]">
+                    <label>Cedula</label>
+                    <input class="text-black"id="cedula" type="text" placeholder="0000000000">
+                </div>
+                <div class="flex justify-center gap-[0.3rem]">
+                    <button id="save" class="p-[0.5rem] bg-slate-700 hover:bg-slate-500 text-white font-bold capitalize">Guardar</button>
+                    <button id="search" class="p-[0.5rem] bg-slate-700 hover:bg-slate-500 text-white font-bold capitalize">Consultar</button>
+                </div>
+            </section>
+            <section class=" flex  bg-slate-600">
+                <div class="flex flex-col gap-[0.5rem]  border-x-solid border-white border-x-[0.15rem]">
+                    <h1 class="p-[0.7rem] border-y-solid border-white border-y-[0.2rem] ">Nombre Completo</h1>
+                    <div id="listName" class="flex  flex-col gap-[1rem] text-white font-bold">
+                        
+                    </div>
+                </div>
+                <div class="flex flex-col gap-[0.5rem]  border-x-solid border-white border-x-[0.15rem]">
+                    <h1 class="p-[0.7rem] border-y-solid border-white border-y-[0.2rem] ">¿Cumpleaños?</h1>
+                    <div id="ListBirth" class="flex  flex-col gap-[1rem] text-white font-bold">
+                        
+                    </div>
+                </div>
+            </section>
+        </section>
+    </main>
+    <script src="./main.js"></script>
+</body>
+</html>
