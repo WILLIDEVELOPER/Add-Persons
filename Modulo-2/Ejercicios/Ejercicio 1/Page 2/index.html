@@ -11,17 +11,22 @@
     <main class="flex flex-col p-[1rem] w-screen h-screen bg-slate-700">
         <div class="w-full flex justify-end p-[1rem]">
             <div class="flex gap-[0.7rem] p-[1rem] bg-slate-600 rounded-lg">
-                <input type="text" class="bg-slate-700 outline-none rounded-lg placeholder:text-white placeholder:font-bold text-white font-bold p-[0.5rem] " placeholder="Type a search">
+                <input type="text" id="buscador" class="bg-slate-700 outline-none rounded-lg placeholder:text-white placeholder:font-bold text-white font-bold p-[0.5rem] " placeholder="Type a search">
                 <button id="search" class="bg-slate-700 hover:brightness-50 text-white font-bold p-[0.5rem] rounded-lg">Buscar</button>
             </div>
         </div>
         <div class=" p-[1rem] w-full h-[70%] flex justify-center items-center">
-            <div class="text-white font-bold bg-slate-600">
-                <div class="">
-                    <div><button>Atras</button></div>
-                    <div></div>
+            <div id="resultado" hidden class="text-white font-bold bg-slate-800">
+                <div  class="p-[1rem] flex flex-col gap-[1rem] w-full justify-between">
+                    <div ><button id="atras" class="capitalize bg-slate-600 rounded-md p-[0.5rem]"></button></div>
+                    <div  class="flex gap-[1rem] ">
+                        <h1>Nombre Completo:</h1>
+                        <p id="fullName" class="text-center"></p>
+                    </div>
                 </div>
-                <div></div>
+                <div>
+                    
+                </div>
             </div>
             <div hidden></div>
         </div>

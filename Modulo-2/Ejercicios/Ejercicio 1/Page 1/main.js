@@ -90,16 +90,17 @@ guardar.addEventListener("click", () => {
     ListBirth.innerHTML += `<p class="p-[0.3rem] text-center  w-full border-b-solid border-white border-b-[0.2rem]">${cumple}</p>`;
     personas.push(person)
     console.log(personas);
-    personas.forEach(e =>{
-        for (const key in e) {
-            localStorage.setItem(key, e[key])
-        }
-    })
+    localStorage.setItem("Personas", JSON.stringify(personas))
+
+    nombre.value = ""
+    apellido.value = ""
+    fechaNac.value = ""
+    cedula.value = ""
   }else{
     alert("Ingrese todos los campos")
   }
 });
 
 consultar.addEventListener("click", () =>{
-    location.href="http://127.0.0.1:5500/Form-Clases/Page%202/index.html"
+    location.href="http://127.0.0.1:5500/Modulo-2/Form-Clases/Page%202/index.html"
 })
