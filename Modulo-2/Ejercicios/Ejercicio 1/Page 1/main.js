@@ -10,7 +10,6 @@ let fullName = "";
 let cumple = "";
 let listName = document.getElementById("listName");
 let ListBirth = document.getElementById("ListBirth");
-let consultar = document.getElementById("search")
 
 
 class Persona {
@@ -100,7 +99,3 @@ guardar.addEventListener("click", () => {
     alert("Ingrese todos los campos")
   }
 });
-
-consultar.addEventListener("click", () =>{
-    location.href="http://127.0.0.1:5500/Modulo-2/Form-Clases/Page%202/index.html"
-})

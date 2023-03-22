@@ -36,22 +36,23 @@ search.addEventListener("click", () => {
     fechaNacData.dia = fechaNac.getDate();
     fechaNacData.mes = fechaNac.getMonth() + 1;
     fechaNacData.year = fechaNac.getFullYear();
-    
+
     fechaAct = new Date();
     fechaActData.dia = fechaAct.getDate();
     fechaActData.mes = fechaAct.getMonth() + 1;
     fechaActData.year = fechaAct.getFullYear();
 
-    let diferecia = fechaActData.year -fechaNacData.year
+    let diferecia = fechaActData.year - fechaNacData.year;
 
     if (fechaNacData.year > fechaActData.year) {
       mensaje = "Esta persona no ha nacido";
     }
 
     if (fechaActData.year > fechaNacData.year) {
-      if (
-        fechaActData.mes == fechaNacData.mes
-      ) {
+      if (fechaActData.mes == fechaNacData.mes) {
+        if (fechaActData.year == fechaNacData.year) {
+          mensaje = "Este año ha nacido, Tiene 0 años";
+        }
         if (fechaActData.dia > fechaNacData.dia) {
           diasFaltantes = fechaActData.dia - fechaNacData.dia + 365;
           mensaje = `Te faltan ${diasFaltantes} para cumplir años`;
@@ -63,9 +64,8 @@ search.addEventListener("click", () => {
           diasFaltantes = fechaNacData.dia - fechaActData.dia;
           mensaje = `Te faltan ${diasFaltantes} para cumplir años`;
         }
-      } else if (fechaActData.year == fechaNacData.year) {
-        mensaje = "Este año ha nacido, Tiene 0 años";
       } else if (fechaNacData.mes > fechaActData.mes) {
+
         
 
       }
